@@ -1,26 +1,12 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-export default function CoinTable(props) {
-    return (
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>name</th>
-                    <th>age</th>
-                    <th>phone</th>
-                    <th>mail</th>
-                </tr>
-            </thead>
-            <tbody>
+ReactDOM.render(<App />, document.getElementById('root'));
 
-            </tbody>
-        </table>
-    )
-}
-
-render(<App />, document.getElementById("root"));
-
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
