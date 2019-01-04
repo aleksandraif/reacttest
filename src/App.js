@@ -2,6 +2,8 @@ import React from 'react';
 import PhoneTable from './components/Phone-table';
 
 import data from './components/data/phone.json';
+import PropTypes from 'prop-types';
+
 
 import './App.css';
 
