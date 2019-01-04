@@ -1,11 +1,9 @@
 import React from 'react';
-import CoinTable from './components/coin-table/index';
+import PhoneTable from './components/Phone-table';
 
-import data from './components/data/coins.json';
+import data from './components/data/phone.json';
 
 import './App.css';
-
-
 
 class App extends React.Component{
   constructor(props){
@@ -17,13 +15,14 @@ class App extends React.Component{
 
   render() {
     return (
-      <div
-        className="page-container"
-      >
-          <CoinTable data={this.state.data} />
+      <div>
+          <PhoneTable data={this.state.data} />
       </div>
     )
   }
 }
+
+App.propTypes = {
+   optionalArray: PropTypes.array}
 
 export default App;

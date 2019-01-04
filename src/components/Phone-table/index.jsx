@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function CoinTable(props) {
+export default function PhoneTable(props) {
   return (
     <div>
-      <h1>Телефонная книга</h1>
+      <h1 className="text-center">Телефонная книга</h1>
 
-      <table className="table table-condensed table-hover table-bordered table-sm">   
+      <table className="table table-bordered table-hover">   
         <thead>
-          <tr className="thead-default">
+          <tr className="text-center">
             <th>Номер</th>
             <th>Имя</th>
             <th>Возраст</th>
